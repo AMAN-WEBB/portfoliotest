@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBIC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <style>
+            *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins';
+}
+header{
+    background: url(banner.jpg) scroll;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 8px 5px 0 rgba(0, 0, 0, 0.5);
+}
+nav li{
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+nav a{
+    font-size: 15px;
+    color: #000;
+    position: relative;
+    font-weight: 400;
+}
+nav ul li a::after{
+    display: block;
+    content: '';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: 0.5s;
+}
+header nav a img{
+    width: 200px;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.head-text{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    padding: 0 10%;
+    top: 250px;
+}
+.head-text h1{
+    font-size: 48px;
+    color: #fff;
+    line-height: 35px;
+}
+/* --------------about--------------- */
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.about-col-1{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.about-col-1:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+    ul{
+        display: none;
+    }
+    header{
+        height: 400px;
+    }
+    .head-text h1{
+        font-size: 28px;
+        
+    }
+    .head-text{
+        top: 25%;
+    }
+    .about h1{
+        font-size: 28px;
+    }
+    .about{
+        padding-top: 60px;
+    }
+}
+        </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="school.png" alt="Logo"></a>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">STAFF</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="head-text">
+            <h1>WELCOME TO MAHARANI LAXMI BAI<br>INTER COLLEGE,<br>JHANSI(U,P)</h1>
+        </div>
+    </header>
+    <!-- -------------about----------------- -->
+    <section class="about">
+        <h1>ABOUT US</h1>
+        <p>CHANGE YOUR MIND, CHANGE YOUR LIFE</p>
+        <div class="row">
+            <div class="about-col-1">
+                <h3>OUR MISSION</h3>
+                <p>The school with its motto "Art of Learning" has been serving the society in the field of education.
+                    Today it stands as a 'Repository of learning' and a patron of 'Quality Consciousness' devoted to
+                    fostering knowledge, self-discovery, human dignity and integrity.</p>
+            </div>
+            <div class="about-col-1">
+                <h3>OUR VISION</h3>
+                <p>Our Vision is to see beyond the narrow walls of the classrooms and textbooks and promote out of the
+                    box thinking to empower every student to master the challenges of today and shape the worlds of
+                    tomorrow.</p>
+            </div>
+            <div class="about-col-1">
+                <h3>SPECIAL AWARD</h3>
+                <p>A special award (consistent effort) will be given to students for showing improvement in academics
+                    throughout the academic year.</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
